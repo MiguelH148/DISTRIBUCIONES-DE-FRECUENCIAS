@@ -2,7 +2,7 @@
 title: "DISTRIBUCIONES DE FRECUENCIAS"
 subtitle: "TABLAS"
 author: 
-  - name: Miguel Angel Hurtado Rubiano
+  - name: Miguel Angel Hurtado Rubiano <br> Jose Santiago Ramirez Hernandez <br> Sebastian Mahecha Veru
     affiliation: "Universidad del Tolima"
     affiliation-url: "https://www.ut.edu.co/"
 date: today
@@ -84,6 +84,136 @@ ipak(packages)
 ```
 
 [@tidyverse][@kableExtra; @readxl; @psych]
+
+# [Introducción]{style="color: red;"}
+
+El análisis estadístico permite organizar, resumir e interpretar conjuntos de datos para identificar características relevantes de una población o muestra. Una de las herramientas fundamentales para este propósito son las **distribuciones de frecuencias**, que permiten conocer cómo se distribuyen las observaciones de acuerdo con los valores o categorías de una variable.
+
+Una **distribución de frecuencias unidimensional** describe el comportamiento de una sola variable estadística. Su representación mediante tablas facilita la comparación de valores, la identificación de patrones y la construcción de gráficos que contribuyen a la interpretación de los datos.
+
+## Concepto y clasificación
+
+Una distribución de frecuencias es una representación organizada de los datos que indica cuántas observaciones corresponden a cada valor, categoría o intervalo de una variable.
+
+Según la naturaleza de la variable, se distinguen dos formas principales de presentación:
+
+- **Datos no agrupados:** cada valor o categoría se presenta individualmente. Son apropiados cuando la cantidad de valores distintos es manejable.
+- **Datos agrupados:** las observaciones se organizan en intervalos o clases, especialmente cuando una variable cuantitativa presenta numerosos valores diferentes.
+
+## Elementos de una distribución de frecuencias
+
+Las principales medidas que conforman una tabla de frecuencias son las siguientes:
+
+**Frecuencia absoluta (\(f_i\)).** Indica el número de observaciones que pertenecen a una categoría, valor o clase determinada.
+
+**Frecuencia relativa (\(h_i\)).** Representa la proporción de observaciones correspondientes a una categoría respecto al total de datos.
+
+$$
+h_i=\frac{f_i}{n}
+$$
+
+**Frecuencia absoluta acumulada (\(F_i\)).** Corresponde a la suma progresiva de las frecuencias absolutas hasta una categoría o clase determinada. Se utiliza cuando existe un orden significativo en los valores.
+
+$$
+F_i=\sum_{j=1}^{i}f_j
+$$
+
+**Frecuencia relativa acumulada (\(H_i\)).** Representa la suma progresiva de las frecuencias relativas. Expresa la proporción de observaciones acumuladas hasta una categoría o clase determinada.
+
+$$
+H_i=\sum_{j=1}^{i}h_j=\frac{F_i}{n}
+$$
+
+**Porcentaje (\(p_i\)).** Expresa la frecuencia relativa en términos porcentuales.
+
+$$
+p_i=h_i\times100
+$$
+
+Donde:
+
+- \(n\): número total de observaciones.
+- \(i\): índice que identifica un valor, categoría o clase.
+- \(f_i\): frecuencia absoluta.
+- \(h_i\): frecuencia relativa.
+- \(F_i\): frecuencia absoluta acumulada.
+- \(H_i\): frecuencia relativa acumulada.
+
+## Distribuciones según el tipo de variable
+
+La estructura de una tabla de frecuencias depende de la naturaleza de la variable analizada.
+
+**Variables cualitativas.** Describen atributos o categorías, como el género, el deporte preferido o el nivel educativo. Se emplean frecuencias absolutas, relativas y porcentuales. Las frecuencias acumuladas solo tienen sentido cuando las categorías poseen un orden natural, como sucede con una variable ordinal.
+
+**Variables cuantitativas discretas.** Representan valores numéricos contables, como el número de hermanos o la cantidad de visitas. Pueden presentarse mediante valores individuales o agruparse cuando existen muchos valores distintos.
+
+**Variables cuantitativas continuas.** Representan magnitudes que pueden tomar cualquier valor dentro de un intervalo, como la estatura, el peso o el tiempo. Generalmente se organizan en intervalos de clase para facilitar su interpretación.
+
+## Distribuciones de frecuencias para datos agrupados
+
+Cuando una variable cuantitativa presenta numerosos valores diferentes, resulta conveniente agruparlos en intervalos. Para construir esta distribución se consideran los siguientes elementos:
+
+**Rango (\(R\)).** Es la diferencia entre el valor máximo y el valor mínimo observado.
+
+$$
+R=x_{\max}-x_{\min}
+$$
+
+**Número de clases (\(k\)).** Corresponde a la cantidad de intervalos en los que se organiza el conjunto de datos. Una aproximación habitual es la regla de Sturges:
+
+$$
+k=1+3.322\log_{10}(n)
+$$
+
+El resultado se ajusta a un número entero adecuado según las características de los datos.
+
+**Amplitud de clase (\(A\)).** Representa el ancho de los intervalos. Si se utiliza una amplitud común, puede estimarse mediante:
+
+$$
+A\approx\frac{R}{k}
+$$
+
+En la práctica, la amplitud puede redondearse a un valor conveniente, procurando que los intervalos cubran todos los datos y no se superpongan.
+
+**Marca de clase (\(x_i\)).** Es el punto medio de cada intervalo y se utiliza como valor representativo de los datos agrupados.
+
+$$
+x_i=\frac{L_i+L_s}{2}
+$$
+
+Donde \(L_i\) y \(L_s\) son, respectivamente, los límites inferior y superior de la clase.
+
+## Propiedades fundamentales
+
+Toda distribución de frecuencias completa debe cumplir las siguientes relaciones:
+
+$$
+\sum_{i=1}^{k}f_i=n
+$$
+
+$$
+\sum_{i=1}^{k}h_i=1
+$$
+
+$$
+\sum_{i=1}^{k}p_i=100\%
+$$
+
+Además, la última frecuencia absoluta acumulada debe ser igual al total de observaciones, mientras que la última frecuencia relativa acumulada debe ser igual a uno, o al 100 % cuando se expresa en porcentajes.
+
+Estas propiedades permiten verificar la consistencia de los cálculos y detectar posibles errores en la construcción de las tablas.
+
+## Representación gráfica e interpretación
+
+Las distribuciones de frecuencias pueden representarse gráficamente para facilitar el análisis exploratorio de los datos. Entre las representaciones más utilizadas se encuentran:
+
+- **Diagrama de barras:** apropiado para comparar frecuencias entre categorías o valores discretos.
+- **Histograma:** permite visualizar la distribución de una variable cuantitativa agrupada en intervalos.
+- **Polígono de frecuencias:** conecta los puntos correspondientes a las marcas de clase y sus frecuencias.
+- **Ojiva:** representa las frecuencias acumuladas y permite observar la proporción de datos que no supera determinados valores.
+- **Diagrama circular:** muestra la participación porcentual de las categorías respecto al total.
+
+La elección de la representación depende del tipo de variable y del objetivo del análisis. Una tabla de frecuencias no solo resume los datos, sino que también constituye una base para estudiar su comportamiento, comparar grupos y calcular medidas estadísticas descriptivas.
 
 # [.Leer el Dataset]{style="color: red;"}
 
@@ -394,7 +524,6 @@ En síntesis, el estrato medio presenta una ligera predominancia dentro de la po
 :::
 
 [**Distribución de frecuencias de diferentes estudiantes de Ibagué según su Tecnologia** $(n=300)$]{style="font-size: 20px; color: red;"}
-
 
 ::: panel-tabset
 ## TABLA

@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Miguel Angel Hurtado Rubiano">
+<meta name="author" content="Miguel Angel Hurtado Rubiano   Jose Santiago Ramirez Hernandez   Sebastian Mahecha Veru">
 
 <title>DISTRIBUCIONES DE FRECUENCIAS</title>
 <style>
@@ -165,7 +165,7 @@ window.Quarto = {
     <div class="quarto-title-meta-heading">Afiliación</div>
     
       <div class="quarto-title-meta-contents">
-      <p class="author">Miguel Angel Hurtado Rubiano </p>
+      <p class="author">Miguel Angel Hurtado Rubiano <br> Jose Santiago Ramirez Hernandez <br> Sebastian Mahecha Veru </p>
     </div>
     <div class="quarto-title-meta-contents">
           <p class="affiliation">
@@ -196,15 +196,24 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#leer-el-dataset" id="toc-leer-el-dataset" class="nav-link active" data-scroll-target="#leer-el-dataset"><span class="header-section-number">1</span> <span style="color: red;">.Leer el Dataset</span></a></li>
-  <li><a href="#conocer-el-dataset" id="toc-conocer-el-dataset" class="nav-link" data-scroll-target="#conocer-el-dataset"><span class="header-section-number">2</span> <span style="color: red;">.Conocer el Dataset</span></a></li>
-  <li><a href="#tablas-y-gráficas" id="toc-tablas-y-gráficas" class="nav-link" data-scroll-target="#tablas-y-gráficas"><span class="header-section-number">3</span> <span style="color: red;">.Tablas y Gráficas</span></a>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">1</span> <span style="color: red;">Introducción</span></a>
   <ul class="collapse">
-  <li><a href="#variable-nominal" id="toc-variable-nominal" class="nav-link" data-scroll-target="#variable-nominal"><span class="header-section-number">3.1</span> <span style="color: red;">.Variable Nominal</span></a></li>
-  <li><a href="#variable-ordinal" id="toc-variable-ordinal" class="nav-link" data-scroll-target="#variable-ordinal"><span class="header-section-number">3.2</span> <span style="color: red;">.Variable ordinal</span></a></li>
-  <li><a href="#variable-discreta" id="toc-variable-discreta" class="nav-link" data-scroll-target="#variable-discreta"><span class="header-section-number">3.3</span> <span style="color: red;">.Variable discreta</span></a></li>
-  <li><a href="#variable-continua" id="toc-variable-continua" class="nav-link" data-scroll-target="#variable-continua"><span class="header-section-number">3.4</span> <span style="color: red;">.Variable continua</span></a></li>
-  <li><a href="#tablas-de-contingencia" id="toc-tablas-de-contingencia" class="nav-link" data-scroll-target="#tablas-de-contingencia"><span class="header-section-number">3.5</span> <span style="color: red;">.TABLAS DE CONTINGENCIA</span></a></li>
+  <li><a href="#concepto-y-clasificación" id="toc-concepto-y-clasificación" class="nav-link" data-scroll-target="#concepto-y-clasificación"><span class="header-section-number">1.1</span> Concepto y clasificación</a></li>
+  <li><a href="#elementos-de-una-distribución-de-frecuencias" id="toc-elementos-de-una-distribución-de-frecuencias" class="nav-link" data-scroll-target="#elementos-de-una-distribución-de-frecuencias"><span class="header-section-number">1.2</span> Elementos de una distribución de frecuencias</a></li>
+  <li><a href="#distribuciones-según-el-tipo-de-variable" id="toc-distribuciones-según-el-tipo-de-variable" class="nav-link" data-scroll-target="#distribuciones-según-el-tipo-de-variable"><span class="header-section-number">1.3</span> Distribuciones según el tipo de variable</a></li>
+  <li><a href="#distribuciones-de-frecuencias-para-datos-agrupados" id="toc-distribuciones-de-frecuencias-para-datos-agrupados" class="nav-link" data-scroll-target="#distribuciones-de-frecuencias-para-datos-agrupados"><span class="header-section-number">1.4</span> Distribuciones de frecuencias para datos agrupados</a></li>
+  <li><a href="#propiedades-fundamentales" id="toc-propiedades-fundamentales" class="nav-link" data-scroll-target="#propiedades-fundamentales"><span class="header-section-number">1.5</span> Propiedades fundamentales</a></li>
+  <li><a href="#representación-gráfica-e-interpretación" id="toc-representación-gráfica-e-interpretación" class="nav-link" data-scroll-target="#representación-gráfica-e-interpretación"><span class="header-section-number">1.6</span> Representación gráfica e interpretación</a></li>
+  </ul></li>
+  <li><a href="#leer-el-dataset" id="toc-leer-el-dataset" class="nav-link" data-scroll-target="#leer-el-dataset"><span class="header-section-number">2</span> <span style="color: red;">.Leer el Dataset</span></a></li>
+  <li><a href="#conocer-el-dataset" id="toc-conocer-el-dataset" class="nav-link" data-scroll-target="#conocer-el-dataset"><span class="header-section-number">3</span> <span style="color: red;">.Conocer el Dataset</span></a></li>
+  <li><a href="#tablas-y-gráficas" id="toc-tablas-y-gráficas" class="nav-link" data-scroll-target="#tablas-y-gráficas"><span class="header-section-number">4</span> <span style="color: red;">.Tablas y Gráficas</span></a>
+  <ul class="collapse">
+  <li><a href="#variable-nominal" id="toc-variable-nominal" class="nav-link" data-scroll-target="#variable-nominal"><span class="header-section-number">4.1</span> <span style="color: red;">.Variable Nominal</span></a></li>
+  <li><a href="#variable-ordinal" id="toc-variable-ordinal" class="nav-link" data-scroll-target="#variable-ordinal"><span class="header-section-number">4.2</span> <span style="color: red;">.Variable ordinal</span></a></li>
+  <li><a href="#variable-discreta" id="toc-variable-discreta" class="nav-link" data-scroll-target="#variable-discreta"><span class="header-section-number">4.3</span> <span style="color: red;">.Variable discreta</span></a></li>
+  <li><a href="#variable-continua" id="toc-variable-continua" class="nav-link" data-scroll-target="#variable-continua"><span class="header-section-number">4.4</span> <span style="color: red;">.Variable continua</span></a></li>
+  <li><a href="#tablas-de-contingencia" id="toc-tablas-de-contingencia" class="nav-link" data-scroll-target="#tablas-de-contingencia"><span class="header-section-number">4.5</span> <span style="color: red;">.TABLAS DE CONTINGENCIA</span></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -257,8 +266,109 @@ body{
 </details>
 </div>
 <p>[<span class="citation" data-cites="tidyverse">Wickham et&nbsp;al. (<a href="#ref-tidyverse" role="doc-biblioref">2019</a>)</span>]<span class="citation" data-cites="kableExtra readxl psych">(<a href="#ref-kableExtra" role="doc-biblioref">Zhu 2026</a>; <a href="#ref-readxl" role="doc-biblioref">Wickham y Bryan 2026</a>; <a href="#ref-psych" role="doc-biblioref">2026</a>)</span></p>
-<section id="leer-el-dataset" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> <span style="color: red;">.Leer el Dataset</span></h1>
+<section id="introducción" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <span style="color: red;">Introducción</span></h1>
+<p>El análisis estadístico permite organizar, resumir e interpretar conjuntos de datos para identificar características relevantes de una población o muestra. Una de las herramientas fundamentales para este propósito son las <strong>distribuciones de frecuencias</strong>, que permiten conocer cómo se distribuyen las observaciones de acuerdo con los valores o categorías de una variable.</p>
+<p>Una <strong>distribución de frecuencias unidimensional</strong> describe el comportamiento de una sola variable estadística. Su representación mediante tablas facilita la comparación de valores, la identificación de patrones y la construcción de gráficos que contribuyen a la interpretación de los datos.</p>
+<section id="concepto-y-clasificación" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="concepto-y-clasificación"><span class="header-section-number">1.1</span> Concepto y clasificación</h2>
+<p>Una distribución de frecuencias es una representación organizada de los datos que indica cuántas observaciones corresponden a cada valor, categoría o intervalo de una variable.</p>
+<p>Según la naturaleza de la variable, se distinguen dos formas principales de presentación:</p>
+<ul>
+<li><strong>Datos no agrupados:</strong> cada valor o categoría se presenta individualmente. Son apropiados cuando la cantidad de valores distintos es manejable.</li>
+<li><strong>Datos agrupados:</strong> las observaciones se organizan en intervalos o clases, especialmente cuando una variable cuantitativa presenta numerosos valores diferentes.</li>
+</ul>
+</section>
+<section id="elementos-de-una-distribución-de-frecuencias" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="elementos-de-una-distribución-de-frecuencias"><span class="header-section-number">1.2</span> Elementos de una distribución de frecuencias</h2>
+<p>Las principales medidas que conforman una tabla de frecuencias son las siguientes:</p>
+<p><strong>Frecuencia absoluta ((f_i)).</strong> Indica el número de observaciones que pertenecen a una categoría, valor o clase determinada.</p>
+<p><strong>Frecuencia relativa ((h_i)).</strong> Representa la proporción de observaciones correspondientes a una categoría respecto al total de datos.</p>
+<p><span class="math display">
+h_i=\frac{f_i}{n}
+</span></p>
+<p><strong>Frecuencia absoluta acumulada ((F_i)).</strong> Corresponde a la suma progresiva de las frecuencias absolutas hasta una categoría o clase determinada. Se utiliza cuando existe un orden significativo en los valores.</p>
+<p><span class="math display">
+F_i=\sum_{j=1}^{i}f_j
+</span></p>
+<p><strong>Frecuencia relativa acumulada ((H_i)).</strong> Representa la suma progresiva de las frecuencias relativas. Expresa la proporción de observaciones acumuladas hasta una categoría o clase determinada.</p>
+<p><span class="math display">
+H_i=\sum_{j=1}^{i}h_j=\frac{F_i}{n}
+</span></p>
+<p><strong>Porcentaje ((p_i)).</strong> Expresa la frecuencia relativa en términos porcentuales.</p>
+<p><span class="math display">
+p_i=h_i\times100
+</span></p>
+<p>Donde:</p>
+<ul>
+<li>(n): número total de observaciones.</li>
+<li>(i): índice que identifica un valor, categoría o clase.</li>
+<li>(f_i): frecuencia absoluta.</li>
+<li>(h_i): frecuencia relativa.</li>
+<li>(F_i): frecuencia absoluta acumulada.</li>
+<li>(H_i): frecuencia relativa acumulada.</li>
+</ul>
+</section>
+<section id="distribuciones-según-el-tipo-de-variable" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="distribuciones-según-el-tipo-de-variable"><span class="header-section-number">1.3</span> Distribuciones según el tipo de variable</h2>
+<p>La estructura de una tabla de frecuencias depende de la naturaleza de la variable analizada.</p>
+<p><strong>Variables cualitativas.</strong> Describen atributos o categorías, como el género, el deporte preferido o el nivel educativo. Se emplean frecuencias absolutas, relativas y porcentuales. Las frecuencias acumuladas solo tienen sentido cuando las categorías poseen un orden natural, como sucede con una variable ordinal.</p>
+<p><strong>Variables cuantitativas discretas.</strong> Representan valores numéricos contables, como el número de hermanos o la cantidad de visitas. Pueden presentarse mediante valores individuales o agruparse cuando existen muchos valores distintos.</p>
+<p><strong>Variables cuantitativas continuas.</strong> Representan magnitudes que pueden tomar cualquier valor dentro de un intervalo, como la estatura, el peso o el tiempo. Generalmente se organizan en intervalos de clase para facilitar su interpretación.</p>
+</section>
+<section id="distribuciones-de-frecuencias-para-datos-agrupados" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="distribuciones-de-frecuencias-para-datos-agrupados"><span class="header-section-number">1.4</span> Distribuciones de frecuencias para datos agrupados</h2>
+<p>Cuando una variable cuantitativa presenta numerosos valores diferentes, resulta conveniente agruparlos en intervalos. Para construir esta distribución se consideran los siguientes elementos:</p>
+<p><strong>Rango ((R)).</strong> Es la diferencia entre el valor máximo y el valor mínimo observado.</p>
+<p><span class="math display">
+R=x_{\max}-x_{\min}
+</span></p>
+<p><strong>Número de clases ((k)).</strong> Corresponde a la cantidad de intervalos en los que se organiza el conjunto de datos. Una aproximación habitual es la regla de Sturges:</p>
+<p><span class="math display">
+k=1+3.322\log_{10}(n)
+</span></p>
+<p>El resultado se ajusta a un número entero adecuado según las características de los datos.</p>
+<p><strong>Amplitud de clase ((A)).</strong> Representa el ancho de los intervalos. Si se utiliza una amplitud común, puede estimarse mediante:</p>
+<p><span class="math display">
+A\approx\frac{R}{k}
+</span></p>
+<p>En la práctica, la amplitud puede redondearse a un valor conveniente, procurando que los intervalos cubran todos los datos y no se superpongan.</p>
+<p><strong>Marca de clase ((x_i)).</strong> Es el punto medio de cada intervalo y se utiliza como valor representativo de los datos agrupados.</p>
+<p><span class="math display">
+x_i=\frac{L_i+L_s}{2}
+</span></p>
+<p>Donde (L_i) y (L_s) son, respectivamente, los límites inferior y superior de la clase.</p>
+</section>
+<section id="propiedades-fundamentales" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="propiedades-fundamentales"><span class="header-section-number">1.5</span> Propiedades fundamentales</h2>
+<p>Toda distribución de frecuencias completa debe cumplir las siguientes relaciones:</p>
+<p><span class="math display">
+\sum_{i=1}^{k}f_i=n
+</span></p>
+<p><span class="math display">
+\sum_{i=1}^{k}h_i=1
+</span></p>
+<p><span class="math display">
+\sum_{i=1}^{k}p_i=100\%
+</span></p>
+<p>Además, la última frecuencia absoluta acumulada debe ser igual al total de observaciones, mientras que la última frecuencia relativa acumulada debe ser igual a uno, o al 100 % cuando se expresa en porcentajes.</p>
+<p>Estas propiedades permiten verificar la consistencia de los cálculos y detectar posibles errores en la construcción de las tablas.</p>
+</section>
+<section id="representación-gráfica-e-interpretación" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="representación-gráfica-e-interpretación"><span class="header-section-number">1.6</span> Representación gráfica e interpretación</h2>
+<p>Las distribuciones de frecuencias pueden representarse gráficamente para facilitar el análisis exploratorio de los datos. Entre las representaciones más utilizadas se encuentran:</p>
+<ul>
+<li><strong>Diagrama de barras:</strong> apropiado para comparar frecuencias entre categorías o valores discretos.</li>
+<li><strong>Histograma:</strong> permite visualizar la distribución de una variable cuantitativa agrupada en intervalos.</li>
+<li><strong>Polígono de frecuencias:</strong> conecta los puntos correspondientes a las marcas de clase y sus frecuencias.</li>
+<li><strong>Ojiva:</strong> representa las frecuencias acumuladas y permite observar la proporción de datos que no supera determinados valores.</li>
+<li><strong>Diagrama circular:</strong> muestra la participación porcentual de las categorías respecto al total.</li>
+</ul>
+<p>La elección de la representación depende del tipo de variable y del objetivo del análisis. Una tabla de frecuencias no solo resume los datos, sino que también constituye una base para estudiar su comportamiento, comparar grupos y calcular medidas estadísticas descriptivas.</p>
+</section>
+</section>
+<section id="leer-el-dataset" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> <span style="color: red;">.Leer el Dataset</span></h1>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Ver código</summary>
@@ -266,8 +376,8 @@ body{
 </details>
 </div>
 </section>
-<section id="conocer-el-dataset" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> <span style="color: red;">.Conocer el Dataset</span></h1>
+<section id="conocer-el-dataset" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> <span style="color: red;">.Conocer el Dataset</span></h1>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Ver código</summary>
@@ -371,10 +481,10 @@ $ Satisfaccion    &lt;ord&gt; Muy alta, Media, Muy alta, Muy alta, Muy baja, Alt
 </div>
 </div>
 </section>
-<section id="tablas-y-gráficas" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> <span style="color: red;">.Tablas y Gráficas</span></h1>
-<section id="variable-nominal" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="variable-nominal"><span class="header-section-number">3.1</span> <span style="color: red;">.Variable Nominal</span></h2>
+<section id="tablas-y-gráficas" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> <span style="color: red;">.Tablas y Gráficas</span></h1>
+<section id="variable-nominal" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="variable-nominal"><span class="header-section-number">4.1</span> <span style="color: red;">.Variable Nominal</span></h2>
 <div class="callout callout-style-simple callout-important callout-empty-content callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -529,8 +639,8 @@ $ Satisfaccion    &lt;ord&gt; Muy alta, Media, Muy alta, Muy alta, Muy baja, Alt
 </div>
 </div>
 </section>
-<section id="variable-ordinal" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="variable-ordinal"><span class="header-section-number">3.2</span> <span style="color: red;">.Variable ordinal</span></h2>
+<section id="variable-ordinal" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="variable-ordinal"><span class="header-section-number">4.2</span> <span style="color: red;">.Variable ordinal</span></h2>
 <div class="callout callout-style-simple callout-note callout-empty-content callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1091,8 +1201,8 @@ $ Satisfaccion    &lt;ord&gt; Muy alta, Media, Muy alta, Muy alta, Muy baja, Alt
 </div>
 </div>
 </section>
-<section id="variable-discreta" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="variable-discreta"><span class="header-section-number">3.3</span> <span style="color: red;">.Variable discreta</span></h2>
+<section id="variable-discreta" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="variable-discreta"><span class="header-section-number">4.3</span> <span style="color: red;">.Variable discreta</span></h2>
 <div class="callout callout-style-simple callout-note no-icon callout-empty-content callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1315,8 +1425,8 @@ $ Satisfaccion    &lt;ord&gt; Muy alta, Media, Muy alta, Muy alta, Muy baja, Alt
 </div>
 </div>
 </section>
-<section id="variable-continua" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="variable-continua"><span class="header-section-number">3.4</span> <span style="color: red;">.Variable continua</span></h2>
+<section id="variable-continua" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="variable-continua"><span class="header-section-number">4.4</span> <span style="color: red;">.Variable continua</span></h2>
 <div class="callout callout-style-default callout-warning no-icon callout-empty-content callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2537,8 +2647,8 @@ Distribuciones de frecuencias para la variable Asistencia (%)
 </div>
 </div>
 </section>
-<section id="tablas-de-contingencia" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="tablas-de-contingencia"><span class="header-section-number">3.5</span> <span style="color: red;">.TABLAS DE CONTINGENCIA</span></h2>
+<section id="tablas-de-contingencia" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="tablas-de-contingencia"><span class="header-section-number">4.5</span> <span style="color: red;">.TABLAS DE CONTINGENCIA</span></h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-16-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-1" role="tab" aria-controls="tabset-16-1" aria-selected="true" href="">ABSOLUTAS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-2" role="tab" aria-controls="tabset-16-2" aria-selected="false" href="">RELATIVAS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-3" role="tab" aria-controls="tabset-16-3" aria-selected="false" href="">CONJUNTAS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-4" role="tab" aria-controls="tabset-16-4" aria-selected="false" href="">APILADAS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-5" role="tab" aria-controls="tabset-16-5" aria-selected="false" href="">INTERPRETACIÓN</a></li></ul>
 <div class="tab-content">
